@@ -18,3 +18,9 @@ done
 
 sleep 3
 echo "complete.."
+
+echo ""
+
+echo "Removing unused packages..."
+sleep 2
+echo "wtc" | sudo -S apt autoremove -y
