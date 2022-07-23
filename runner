@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd
+git clone https://github.com/lifeoncode/clean.git
+cd clean
+./install
+cd
+clean.sh
