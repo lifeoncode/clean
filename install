@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "wtc" | sudo -S mv clean.sh /bin
+echo "Installed.."
