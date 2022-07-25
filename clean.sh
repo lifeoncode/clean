@@ -23,6 +23,8 @@ echo ""
 
 echo "Removing unused packages..."
 sleep 2
+echo "wtc" | sudo -S apt update; sudo apt upgrade -y
+sleep 2
 echo "wtc" | sudo -S apt autoremove -y
 echo ""
 sleep 1
