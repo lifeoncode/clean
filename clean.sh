@@ -56,3 +56,6 @@ echo "wtc" | sudo -S apt install expect -y
 sleep 3
 echo ""
 echo "System clean and up to date. - READY"
+
+sleep 5
+sudo reboot
