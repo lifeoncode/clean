@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo ""
+echo "Cleaning filesystem..."
+echo ""
 # folders not to be wiped
 folders=( Desktop Documents Downloads Music Pictures Videos )
 
@@ -17,15 +20,25 @@ do
 done
 
 sleep 3
-echo "complete.."
-
+echo "Filesystem clean complete..."
 echo ""
 
 echo "Removing unused packages..."
-sleep 2
-echo "wtc" | sudo -S apt update; sudo apt upgrade -y
-sleep 2
 echo "wtc" | sudo -S apt autoremove -y
+echo "wtc" | -S apt autoclean
+sleep 3
+
 echo ""
-sleep 1
-echo "Done"
+echo "Done."
+echo ""
+
+echo "Updating system packages in use..."
+sleep 3
+echo "wtc" | sudo -S apt update
+echo "wtc" | sudo -S apt upgrade -y
+echo "wtc" | sudo -S apt install openssh-server -y
+echo "wtc" | sudo -S apt install expect -y
+
+sleep 3
+echo ""
+echo "System clean and up to date. - READY"
