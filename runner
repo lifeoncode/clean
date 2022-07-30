@@ -1,8 +1,6 @@
 #!/bin/bash
 
-cd
-git clone https://github.com/nduduzof/clean.git
-cd clean
+cd ~/clean
 ./install
 cd
 clean.sh
