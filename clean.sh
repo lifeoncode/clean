@@ -23,6 +23,19 @@ sleep 3
 echo "Filesystem clean complete..."
 echo ""
 
+sleep 3
+echo "Clearing browser data..."
+echo ""
+sleep 3
+echo "wtc" | sudo -S apt-get purge firefox -y
+echo "wtc" | sudo -S rm -rf /etc/firefox/
+echo "wtc" | sudo -S rm -rf /usr/lib/firefox*
+
+rm -rf ~/.cache/mozilla/firefox/*
+rm -rf ~/.mozilla/firefox/*release/*.sqlite
+
+sleep 3
+echo ""
 echo "Removing unused packages..."
 echo "wtc" | sudo -S apt autoremove -y
 echo "wtc" | -S apt autoclean
@@ -36,6 +49,7 @@ echo "Updating system packages in use..."
 sleep 3
 echo "wtc" | sudo -S apt update
 echo "wtc" | sudo -S apt upgrade -y
+echo "wtc" | sudo -S apt install firefox -y
 echo "wtc" | sudo -S apt install openssh-server -y
 echo "wtc" | sudo -S apt install expect -y
 
