@@ -54,6 +54,10 @@ echo "wtc" | sudo -S apt install openssh-server -y
 echo "wtc" | sudo -S apt install expect -y
 
 sleep 3
+echo "wtc" | sudo -S apt autoremove -y
+echo "wtc" | sudo -S apt autoclean
+
+sleep 3
 echo ""
 echo "System clean and up to date. - READY"
 
