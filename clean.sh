@@ -27,12 +27,12 @@ sleep 3
 echo "Clearing browser data..."
 echo ""
 sleep 3
-echo "wtc" | sudo -S apt-get purge firefox -y
-echo "wtc" | sudo -S rm -rf /etc/firefox/
-echo "wtc" | sudo -S rm -rf /usr/lib/firefox*
+#echo "wtc" | sudo -S apt-get purge firefox -y
+#echo "wtc" | sudo -S rm -rf /etc/firefox/
+#echo "wtc" | sudo -S rm -rf /usr/lib/firefox*
 
-rm -rf ~/.cache/mozilla/firefox/*
-rm -rf ~/.mozilla/firefox/*release/*.sqlite
+#rm -rf ~/.cache/mozilla/firefox/*
+#rm -rf ~/.mozilla/firefox/*release/*.sqlite
 
 sleep 3
 echo ""
