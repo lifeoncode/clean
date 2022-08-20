@@ -62,4 +62,5 @@ echo ""
 echo "System clean and up to date. - READY"
 
 sleep 5
-sudo reboot
+echo "Job complete"
+#sudo reboot
